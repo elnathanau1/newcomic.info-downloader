@@ -9,8 +9,10 @@ from threading import Thread
 import time
 
 # Android termux path:
-# SAVE_PATH = "/storage/524C-AE60/Android/data/com.termux/Comics/"
-SAVE_PATH = "/Users/eau/Documents/"
+SAVE_PATH = "/storage/524C-AE60/Android/data/com.termux/Comics/"
+# SAVE_PATH = "/Users/eau/Documents/"
+MAX_THREADS = 5
+
 
 SEARCH_QUERIES = []
 
@@ -47,6 +49,11 @@ def download_comic(link, name):
 
 def main():
     # print("Loading JSON")
+
+    settings = {
+    "save_path" : "/storage/524C-AE60/Android/data/com.termux/Comics/",
+    "max_threads" : "5"
+    }
 
     new_search = {
     "search_query" : "ascender",
