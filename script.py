@@ -41,7 +41,7 @@ def shell():
         elif input_array[0] == "set":
             if input_array[1] == "save_path":
                 new_path(input_array)
-            elif input_array[2] == "max_threads":
+            elif input_array[1] == "max_threads":
                 new_max_threads(input_array)
 
     print("Shell closed.")
