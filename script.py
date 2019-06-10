@@ -77,7 +77,7 @@ def new_path(input_array):
         writeSettings()
         print("Wrote new path to settings.json")
 
-def new_path(input_array):
+def new_max_threads(input_array):
     new_max_threads = 1
     if len(input_array) != 3:
         new_max_threads = int(input("New max_threads: "))
